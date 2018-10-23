@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Cool Calculator</string>
+    <string name="sevenText">7</string>
+    <string name="eightText">8</string>
+    <string name="nineText">9</string>
+    <string name="oneText">1</string>
+    <string name="twoText">2</string>
+    <string name="threeText">3</string>
+    <string name="fourText">4</string>
+    <string name="fiveText">5</string>
+    <string name="sixText">6</string>
+    <string name="zeroText">0</string>
+    <string name="decimalText">.</string>
+    <string name="clearText">C</string>
+    <string name="plusText">+</string>
+    <string name="minusText">-</string>
+    <string name="multiplyText">X</string>
+    <string name="divideText">/</string>
+    <string name="equalsText">=</string>
+    <string name="clearEntryText">CE</string>
+    <string name="divideByZero">You can\'t divide by zero.</string>
+    <string name="errorDisplay">Error</string>
+</resources>

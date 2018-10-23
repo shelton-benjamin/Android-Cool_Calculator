@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="displayBackground">#66FFFF</color>
+    <color name="displayText">#006600</color>
+    <color name="buttonColor">#1E90FF</color>
+    <color name="scratchText">#808080</color>
+    <color name="buttonTextColor">#FF0075</color>
+    <color name="backgroundColor">#FAEBD7</color>
+    <color name="displayBorder">#000000</color>
+</resources>

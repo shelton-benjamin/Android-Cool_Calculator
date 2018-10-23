@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/scratch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="end|center_vertical"
+        android:textAlignment="gravity"
+        android:textColor="@color/scratchText"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/display_background"
+        android:gravity="end|center_vertical"
+        android:paddingEnd="5dp"
+        android:paddingRight="5dp"
+        android:textAlignment="gravity"
+        android:textColor="@color/displayText"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scratch" />
+
+    <com.example.cool_calculator.CoolButton
+        android:id="@+id/sevenButton"
+        style="@style/numberButtonStyle"
+        android:text="@string/sevenText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/display" />
+
+    <com.example.cool_calculator.CoolButton
+        android:id="@+id/eightButton"
+        style="@style/numberButtonStyle"
+        android:text="@string/eightText"
+        app:layout_constraintStart_toEndOf="@+id/sevenButton"
+        app:layout_constraintTop_toBottomOf="@+id/display" />
+
+    <com.example.cool_calculator.CoolButton
+        android:id="@+id/nineButton"
+        style="@style/numberButtonStyle"
+        android:text="@string/nineText"
+        app:layout_constraintStart_toEndOf="@+id/eightButton"
+        app:layout_constraintTop_toBottomOf="@+id/display" />
+
+    <com.example.cool_calculator.CoolButton
+        android:id="@+id/fourButton"
+        style="@style/numberButtonStyle"
+        android:text="@string/fourText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sevenButton" />
+
+    <com.example.cool_calculator.CoolButton
+        android:id="@+id/fiveButton"
+        style="@style/numberButtonStyle"
+        android:text="@string/fiveText"
+        app:layout_constraintStart_toEndOf="@id/fourButton"
+        app:layout_constraintTop_toBottomOf="@id/eightButton" />
+
+    <com.example.cool_calculator.CoolButton
+        android:id="@+id/sixButton"
+        style="@style/numberButtonStyle"
+        android:text="@string/sixText"
+        app:layout_constraintStart_toEndOf="@id/fiveButton"
+        app:layout_constraintTop_toBottomOf="@id/nineButton" />
+
+    <com.example.cool_calculator.CoolButton
+        android:id="@+id/oneButton"
+        style="@style/numberButtonStyle"
+        android:text="@string/oneText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fourButton" />
+
+    <com.example.cool_calculator.CoolButton
+        android:id="@+id/twoButton"
+        style="@style/numberButtonStyle"
+        android:text="@string/twoText"
+        app:layout_constraintStart_toEndOf="@id/oneButton"
+        app:layout_constraintTop_toBottomOf="@id/fiveButton" />
+
+    <com.example.cool_calculator.CoolButton
+        android:id="@+id/threeButton"
+        style="@style/numberButtonStyle"
+        android:text="@string/threeText"
+        app:layout_constraintStart_toEndOf="@id/twoButton"
+        app:layout_constraintTop_toBottomOf="@id/sixButton" />
+
+    <com.example.cool_calculator.CoolButton
+        android:id="@+id/zeroButton"
+        style="@style/numberButtonStyle"
+        android:text="@string/zeroText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/oneButton" />
+
+    <com.example.cool_calculator.CoolButton
+        android:id="@+id/decimalButton"
+        style="@style/numberButtonStyle"
+        android:text="@string/decimalText"
+        app:layout_constraintStart_toEndOf="@id/zeroButton"
+        app:layout_constraintTop_toBottomOf="@id/twoButton" />
+
+    <com.example.cool_calculator.CoolButton
+        android:id="@+id/clearButton"
+        style="@style/numberButtonStyle"
+        android:text="@string/clearText"
+        app:layout_constraintStart_toEndOf="@id/divideButton"
+        app:layout_constraintTop_toBottomOf="@id/minusButton" />
+
+    <com.example.cool_calculator.CoolButton
+        android:id="@+id/clearEntryButton"
+        style="@style/numberButtonStyle"
+        android:text="@string/clearEntryText"
+        app:layout_constraintStart_toEndOf="@id/clearButton"
+        app:layout_constraintTop_toBottomOf="@+id/multiplyButton" />
+
+    <com.example.cool_calculator.CoolButton
+        android:id="@+id/plusButton"
+        style="@style/numberButtonStyle"
+        android:text="@string/plusText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/zeroButton" />
+
+    <com.example.cool_calculator.CoolButton
+        android:id="@+id/minusButton"
+        style="@style/numberButtonStyle"
+        android:text="@string/minusText"
+        app:layout_constraintStart_toEndOf="@id/plusButton"
+        app:layout_constraintTop_toBottomOf="@id/decimalButton" />
+
+    <com.example.cool_calculator.CoolButton
+        android:id="@+id/multiplyButton"
+        style="@style/numberButtonStyle"
+        android:text="@string/multiplyText"
+        app:layout_constraintStart_toEndOf="@id/minusButton"
+        app:layout_constraintTop_toBottomOf="@id/equalsButton" />
+
+    <com.example.cool_calculator.CoolButton
+        android:id="@+id/divideButton"
+        style="@style/numberButtonStyle"
+        android:text="@string/divideText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plusButton" />
+
+    <com.example.cool_calculator.CoolButton
+        android:id="@+id/equalsButton"
+        style="@style/numberButtonStyle"
+        android:text="@string/equalsText"
+        app:layout_constraintStart_toEndOf="@id/decimalButton"
+        app:layout_constraintTop_toBottomOf="@id/threeButton" />
+
+
+</android.support.constraint.ConstraintLayout>
