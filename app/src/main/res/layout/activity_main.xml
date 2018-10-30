@@ -8,6 +8,49 @@
     android:background="@color/backgroundColor"
     tools:context=".MainActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/calculator_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <TextView
+        android:id="@+id/main_title"
+        style="?attr/actionBarTabTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="none"
+        android:text="@string/app_name"
+        android:textColor="@color/titleColor"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@id/calculator_Toolbar"
+        app:layout_constraintTop_toTopOf="@id/calculator_Toolbar"
+        tools:ignore="UnusedAttribute"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <Button
+        android:id="@+id/menuButton"
+        android:layout_width="42dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="showPopup"
+        android:background="@drawable/ic_menu_icon"
+        app:layout_constraintBottom_toBottomOf="@id/calculator_Toolbar"
+        app:layout_constraintEnd_toEndOf="@id/calculator_Toolbar"
+        app:layout_constraintTop_toTopOf="@id/calculator_Toolbar" />
+
 
     <TextView
         android:id="@+id/scratch"
@@ -23,7 +66,7 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/calculator_Toolbar" />
 
     <TextView
         android:id="@+id/display"
@@ -44,7 +87,9 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/scratch" />
+        app:layout_constraintTop_toBottomOf="@id/scratch"
+        tools:ignore="RtlSymmetry" />
+
 
     <com.example.cool_calculator.CoolButton
         android:id="@+id/sevenButton"
@@ -171,6 +216,17 @@
         android:text="@string/equalsText"
         app:layout_constraintStart_toEndOf="@id/decimalButton"
         app:layout_constraintTop_toBottomOf="@id/threeButton" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/menuView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calculator_Toolbar"
+        tools:layout_editor_absoluteY="99dp" />
 
 
 </android.support.constraint.ConstraintLayout>

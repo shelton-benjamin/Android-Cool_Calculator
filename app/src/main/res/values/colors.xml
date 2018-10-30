@@ -10,4 +10,5 @@
     <color name="buttonTextColor">#FF0075</color>
     <color name="backgroundColor">#FAEBD7</color>
     <color name="displayBorder">#000000</color>
+    <color name="titleColor">#FFFFFF</color>
 </resources>
